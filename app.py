@@ -18,7 +18,7 @@ df_back = df_back.rename({'出發地': '目的地', '目的地': '出發地'}, a
 try:
      st.image('./data/logo.png', width = 200)
 except:
-     st.write('failed to load image)
+     st.write('failed to load image')
 st.title('Tigerair vizualisation tool')
 st.markdown("""This app performs simple visualization from the airline data from TigerAir!""")
 
