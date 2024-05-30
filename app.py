@@ -15,6 +15,7 @@ df_go, df_back = df[df['往返']=='去程'][df.columns[:-1]], df[df['往返']=='
 df_back = df_back.rename({'出發地': '目的地', '目的地': '出發地'}, axis = 'columns')
 
 #display dataframes
+st.write('test')
 try:
      st.image('./data/logo.png', width = 200)
 except:
