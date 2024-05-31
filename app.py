@@ -30,3 +30,25 @@ st.dataframe(df_go, use_container_width  = True, hide_index = True, height = 35 
 
 st.subheader('回程機票')
 st.dataframe(df_back, use_container_width  = True, hide_index = True, height = 35 * 6 +38)
+
+#footer
+footer="""<style>
+.footer {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: rgb(5, 24, 85);
+     text-align: center;
+}
+</style>
+<div class="footer">
+     <p>Developed with Streamlit and Tigerair by 
+          <a href="https://github.com/xinhuang0716/TigerAir_with_Streamlit" target="_blank">
+               Optimusprime Huang
+          </a>
+          <br>Copyright © 2024 All Rights Reserved by HUANG.
+     </p>
+</div>
+"""
+st.markdown(footer, unsafe_allow_html = True)
