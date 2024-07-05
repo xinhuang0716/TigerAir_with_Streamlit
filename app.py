@@ -4,7 +4,9 @@ import streamlit as st
 import numpy as np, pandas as pd, time
 
 #configuration of the page
-st.set_page_config(layout = "wide")
+st.set_page_config(layout = "wide",
+                   page_title = 'Tigerair Visualization',
+                   page_icon = "🐘" )
 
 #data loader
 @st.cache_data 
