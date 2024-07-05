@@ -34,7 +34,7 @@ st.dataframe(df_back, use_container_width  = True, hide_index = True, height = 3
 #footer
 footer="""<style>
 .footer {
-
+     position: fixed;
      left: 0;
      bottom: 0;
      width: 100%;
