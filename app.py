@@ -40,12 +40,20 @@ with tab2:
      st.error('Still under development', icon="🚨")
 
 with tab3:
-     st.info("""
-             This app performs simple visualization from the airline data from TigerAir!
-             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-             when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+     #about
+     st.subheader("About")
+     st.info(f"""
+             This is an simple Webapp about TigerAir ticket information visualization!\n
+             * You can find all data from [Tigerair API](https://api-book.tigerairtw.com/graphql)
+             * And whole Webapp is developed via Streamlit Framework, check to their [offical pages](https://streamlit.io/gallery) for some inspirations 
              """)
+     
+     #todo list
+     st.subheader("TODO List")
+     st.checkbox("more detailed ticket information")
+     st.checkbox("data pipeline from Ticket Data ETL to Streamlit Webapp")
+     st.checkbox("optimal trip function")
+
 #footer
 footer="""<style>
 .footer {
@@ -58,11 +66,10 @@ footer="""<style>
 }
 </style>
 <div class="footer">
-     <p>Developed with Streamlit and Tigerair API
-          <br>Copyright © 2024 All Rights Reserved by 
-               <a href="https://github.com/xinhuang0716/TigerAir_with_Streamlit" target="_blank">
-                    Optimusprime Huang
-               </a>.
+     <p>Copyright © 2024 All Rights Reserved by 
+          <a href="https://github.com/xinhuang0716/TigerAir_with_Streamlit" target="_blank">
+               Optimusprime Huang
+          </a>.
      </p>
 </div>
 """
