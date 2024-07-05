@@ -68,7 +68,7 @@ footer="""<style>
 <div class="footer">
      <p>Copyright © 2024 All Rights Reserved by 
           <a href="https://github.com/xinhuang0716/TigerAir_with_Streamlit" target="_blank">
-               Optimusprime Huang
+               XIN
           </a>.
      </p>
 </div>
