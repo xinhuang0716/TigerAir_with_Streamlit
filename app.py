@@ -9,7 +9,7 @@ st.set_page_config(layout = "wide")
 #data loader
 @st.cache_data 
 def get_data():
-     return pd.read_csv('./data/result_tiger.csv')[['出發地', '目的地', '日期', '星期', '金額', '往返']]
+     return pd.read_json('./data/result_tiger.json')[['出發地', '目的地', '日期', '星期', '金額', '往返']]
 
 #display dataframes
 try:
